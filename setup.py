@@ -3,7 +3,6 @@ from distutils.command.install import install as _install
 
 class install(_install):
     def run(self):
-        subprocess.call(['pwd'])
         subprocess.call(['make', 'clean', '-C', 'cqc'])
         subprocess.call(['make', '-C', 'cqc'])
         _install.run(self)
