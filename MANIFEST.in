@@ -1,0 +1,2 @@
+include cqc/cqc.c
+include cqc/Makefile
