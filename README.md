@@ -11,8 +11,16 @@ Please see and add discussion points in the issues.
  
 ## Usage
 
+### Install via GitHub
+
 Clone this repo, and then:
 
 install: `python3 setup.py install`
+
+### Package and Install via PyPi:
+
+1. pacakge: `python3 setup.py sdist`
+2. upload to test server: `python3 -m twine upload --repository-url https://test.pypi.org/legacy/ dist/cqc-0.0.x.tar.gz`
+3. install on another machine: `pip3 install -i https://test.pypi.org/simple/ cqc==0.0.x`
 
 try it out: `python3 mwe.py` <-- should print out an array full of `2.`s
