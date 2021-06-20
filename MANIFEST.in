@@ -1,3 +1,0 @@
-include cqc/cqc.c
-include cqc/Makefile
-include cqc/cqc.so
